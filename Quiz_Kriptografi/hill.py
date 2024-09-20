@@ -34,11 +34,11 @@ def hill_decrypt(cipher_text, key_matrix):
 def hill_cipher():
     st.header("Hill Cipher")
 
-    option = st.selectbox("Pilih opsi:", ("Enkripsi", "Dekripsi"), key="hill_option")
-    uploaded_file = st.file_uploader("Pilih file", type="txt", key="hill_file")
+    opsi = st.selectbox("Pilih opsi:", ("Enkripsi", "Dekripsi"), key="hill_option")
+    unggah_file = st.file_uploader("Pilih file", type="txt", key="hill_file")
 
-    if uploaded_file is not None:
-        text_input = io.StringIO(uploaded_file.getvalue().decode("utf-8")).read().replace(" ", "")
+    if unggah_file is not None:
+        text_input = io.StringIO(unggah_file.getvalue().decode("utf-8")).read().replace(" ", "")
         st.write("File berhasil diupload!")
     else:
         text_input = st.text_area("Masukkan teks:", key="hill_text")
@@ -57,9 +57,9 @@ def hill_cipher():
             key_matrix = [[alphabets.index(key_text[i]), alphabets.index(key_text[i + 1])]
             for i in range(0, 4, 2)]
 
-            if option == "Enkripsi":
+            if opsi == "Enkripsi":
                 hasil = hill_encrypt(text_input, key_matrix)
                 st.success(f"Hasil cipherteks dari {text_input} adalah: {hasil}")
-            elif option == "Dekripsi":
+            elif opsi == "Dekripsi":
                 hasil = hill_decrypt(text_input, key_matrix)
-                    st.success(f"Hasil plaintext dari {text_input} adalah: {hasil}") 
+                st.success(f"Hasil plaintext dari {text_input} adalah: {hasil}")
