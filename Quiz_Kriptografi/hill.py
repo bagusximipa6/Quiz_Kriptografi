@@ -57,12 +57,9 @@ def hill_cipher():
             key_matrix = [[alphabets.index(key_text[i]), alphabets.index(key_text[i + 1])]
             for i in range(0, 4, 2)]
 
-            try:
-                if option == "Enkripsi":
-                    result = hill_encrypt(text_input, key_matrix)
-                    st.success(f"Hasil cipherteks dari {text_input} adalah: {result}")
-                elif option == "Dekripsi":
-                    result = hill_decrypt(text_input, key_matrix)
-                    st.success(f"Hasil plaintext dari {text_input} adalah: {result}")
-            except ValueError as e:
-                st.error(str(e))
+            if option == "Enkripsi":
+                hasil = hill_encrypt(text_input, key_matrix)
+                st.success(f"Hasil cipherteks dari {text_input} adalah: {hasil}")
+            elif option == "Dekripsi":
+                hasil = hill_decrypt(text_input, key_matrix)
+                    st.success(f"Hasil plaintext dari {text_input} adalah: {hasil}") 
