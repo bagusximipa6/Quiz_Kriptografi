@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import io
-from math import gcd
 
 alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
