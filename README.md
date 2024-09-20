@@ -26,9 +26,22 @@ Program ini dirancang untuk memberikan pemahaman dasar tentang algoritma kriptog
 1. Clone repositori ini ke mesin lokal Anda:
    ```bash
    git clone https://github.com/username/repo.git
-2. Masuk ke direktori repositori
+2. Masuk ke direktori repositori:
+   ```bash
    cd repo
-3. Install dependensi yang diperlukan:
+4. Install dependensi yang diperlukan:
+   ```bash
    pip install -r requirements.txt
 
-5. 
+## Penggunaan
+
+1. Jalankan program menggunakan Streamlit:
+   ```bash
+   streamlit run app.py
+2. Buka browser dan akses http://localhost:8501.
+3. Pilih tab di antarmuka untuk memilih algoritma yang diinginkan.
+4. Masukkan kunci dan pesan yang ingin dienkripsi atau didekripsi baik lewat file atau langsung dari keyboard
+
+## Contoh
+![image](https://github.com/user-attachments/assets/2355c47a-b345-449e-bdfd-88fdcfd6c4bf)
+
