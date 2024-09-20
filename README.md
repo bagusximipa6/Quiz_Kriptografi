@@ -43,5 +43,6 @@ Program ini dirancang untuk memberikan pemahaman dasar tentang algoritma kriptog
 4. Masukkan kunci dan pesan yang ingin dienkripsi atau didekripsi baik lewat file .txt atau mengetik langsung dari keyboard
 
 ## Contoh
-![image](https://github.com/user-attachments/assets/2355c47a-b345-449e-bdfd-88fdcfd6c4bf)
+![image](https://github.com/user-attachments/assets/e91af868-da75-4dda-9334-8be3fb9477e2)
+
 
