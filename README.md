@@ -40,7 +40,7 @@ Program ini dirancang untuk memberikan pemahaman dasar tentang algoritma kriptog
    streamlit run app.py
 2. Buka browser dan akses http://localhost:8501.
 3. Pilih tab di antarmuka untuk memilih algoritma yang diinginkan.
-4. Masukkan kunci dan pesan yang ingin dienkripsi atau didekripsi baik lewat file atau langsung dari keyboard
+4. Masukkan kunci dan pesan yang ingin dienkripsi atau didekripsi baik lewat file .txt atau mengetik langsung dari keyboard
 
 ## Contoh
 ![image](https://github.com/user-attachments/assets/2355c47a-b345-449e-bdfd-88fdcfd6c4bf)
